@@ -3,6 +3,15 @@ from django.core.urlresolvers import reverse
 
 from djangotoolbox.fields import ListField, EmbeddedModelField
 
+class Poll(models.Model):
+	question = models.CharField(max_length=200)
+	pub_date = models.DateTimeField('date published')
+
+class Choice(models.Model):
+	poll = models.ForeignKey(Poll)
+	choice = models.CharField(max_length=200)
+	votes = models.IntegerField()
+
 class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, db_index=True)
     title = models.CharField(max_length=255)
