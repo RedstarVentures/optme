@@ -6,6 +6,7 @@ from djangoapp.views import hello
 
 urlpatterns = patterns('',
 	url(r'^hello/$', hello),
+	url(r'^time/$', current_datetime),
     # Examples:
     # url(r'^$', 'djangoapp.views.home', name='home'),
     # url(r'^djangoapp/', include('djangoapp.foo.urls')),
