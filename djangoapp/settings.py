@@ -12,11 +12,11 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
-        'USER': '',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+        'NAME': 'app15407585',                      # Or path to database file if using sqlite3.
+        'USER': 'heroku',                      # Not used with sqlite3.
+        'PASSWORD': '6cefeffb1806c2444c074e4b680ff76f',                  # Not used with sqlite3.
+        'HOST': 'mongodb://heroku:6cefeffb1806c2444c074e4b680ff76f@ethan.mongohq.com',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '10031',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -112,7 +112,7 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.sites',
+    #'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
