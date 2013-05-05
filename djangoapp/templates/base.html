@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OptMe Dashboard</title>
+		<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" type="text/css" href="/static/style.css" />
+	</head>	
+	<body>
+		<div id="content">
+			{% block body %}{% endblock %}
+		</div>
+		<div id="nav">
+			Navigation:<br />
+			<ul>
+				{% block nav %}{% endblock %}
+ 			</ul>
+		</div>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
