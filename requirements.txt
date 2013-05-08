@@ -5,7 +5,6 @@ virtualenv==1.6.4
 virtualenvwrapper==2.10.1
 
 dj-database-url==0.2.1
-psycopg2==2.4.6
 gunicorn==0.17.2
 gevent==0.13.4
 greenlet==0.3.4
@@ -15,4 +14,4 @@ wsgiref==0.1.2
 git+git://github.com/django-nonrel/django-nonrel.git@master
 git+git://github.com/django-nonrel/django-permission-backend-nonrel.git@master
 git+https://github.com/django-nonrel/mongodb-engine.git
-pymongo==2.4
+pymongo==2.5
